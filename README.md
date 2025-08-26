@@ -38,4 +38,4 @@ Prototipo simple de un aplicativo web para vender partes de computadores. Implem
 
 ---
 
-Prototipo creado por ChatGPT - Entregue como ejemplo funcional para actividades de diseño y pruebas.
+Prototipo creado por adinsonpineda
