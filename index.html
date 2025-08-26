@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tienda de Partes - Inicio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="brand">PartesPC</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="cart.html" id="cart-link">Carrito (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Componentes y accesorios para tu equipo</h2>
+      <p>Encuentra procesadores, memorias, discos y más.</p>
+    </section>
+
+    <section id="product-list" class="grid"></section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 PartesPC - Prototipo</p>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>
+    // render product list on index
+    renderProductList();
+    updateCartUI();
+  </script>
+</body>
+</html>

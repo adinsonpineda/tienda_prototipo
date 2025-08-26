@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Carrito - PartesPC</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="brand">PartesPC</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="cart.html">Carrito</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Tu Carrito</h2>
+    <section id="cart-contents"></section>
+    <div id="cart-actions" class="cart-actions">
+      <button id="checkout-btn">Finalizar compra</button>
+      <button id="clear-btn" class="secondary">Vaciar carrito</button>
+    </div>
+    <div id="checkout-msg" class="notice" style="display:none;"></div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 PartesPC - Prototipo</p>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>
+    renderCart();
+    updateCartUI();
+    document.getElementById('checkout-btn').addEventListener('click', function(){
+      document.getElementById('checkout-msg').style.display='block';
+      document.getElementById('checkout-msg').innerText = 'Gracias por su compra (simulado).';
+      localStorage.removeItem('cart');
+      renderCart();
+      updateCartUI();
+    });
+    document.getElementById('clear-btn').addEventListener('click', function(){
+      localStorage.removeItem('cart');
+      renderCart();
+      updateCartUI();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Producto - PartesPC</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="brand">PartesPC</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="cart.html" id="cart-link">Carrito (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <a href="index.html" class="back">← Volver</a>
+    <section id="product-detail" class="product-detail"></section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 PartesPC - Prototipo</p>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>
+    renderProductDetail();
+    updateCartUI();
+  </script>
+</body>
+</html>
